@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+    <title>اللعبة الخطيرة</title>
+    <link rel="stylesheet"
+          href="./assets/style.css">
+    <link href=" https://fonts.googleapis.com/css2?family=Cairo:wght@300&display=swap"
+          rel="stylesheet"
+          type="text/css" />
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="title">حار او بارد</div>
+        <div class="info">إخترنا رقم عشوائي من 1 الى 100. جرب حظك وحاولل تخمن، اذا خمنت رقم قريب (
+            الفرق
+            بين الرقمين 15 او اقل ) راح يطلع لك حار، واذا الرقم الي خمنته بعيد راح يطلع لك بارد
+        </div>
+        <div class="conatiner-form">
+            <h2>عدد المحاولات : <span id="Lifes">10</span></h2>
+            <div class="row-form">
+                <input type="submit"
+                       id="button"
+                       class="button"
+                       onclick="checkNumber ()"
+                       value="تحقق">
+                <input class="textbox"
+                       type="text"
+                       placeholder="ادخل تخمينك"
+                       id="answer">
+            </div>
+            <div id="status_div"
+                 class="status">
+                <div id="status_text">
+                    إكتب رقم لكي تبدا اللعبة
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>
